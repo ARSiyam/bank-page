@@ -27,6 +27,7 @@ body{
     height: 160px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color:rgb(85, 248, 77);
+    border-radius: 20px;
 }
 strong{
     font-size: 30px;
@@ -48,6 +49,7 @@ strong{
     height: 160px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color:rgb(252, 37, 4);
+    border-radius: 20px;
 }
 #withdro{
     padding:0;
@@ -64,7 +66,8 @@ strong{
     width: 300px;
     height: 160px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgb(95, 38, 240);
+    background-color: rgb(74, 7, 245);
+    border-radius: 20px;
 }
 #balance{
     padding:0;
@@ -85,8 +88,9 @@ strong{
     margin-top: 20px;
     width: 490px;
     height: 200px;
-    background-color: rgba(130, 3, 249, 0.996);
+    background-color: rgba(76, 249, 165, 0.996);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
 }
 .input-withdro{
     padding: 10px 30px;
@@ -95,6 +99,7 @@ strong{
     height: 200px;
     background-color: rgb(191, 1, 243);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
 }
 #dipojit-input{
     width: 350px;

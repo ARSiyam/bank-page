@@ -1,11 +1,17 @@
   document.getElementById('diposit-btn').addEventListener('click',function(){
-           totaldiposit();
-           balance();
+          
+        const   emptyValue=dipositValue.value;
+        console.log(emptyValue.length)
+        if(emptyValue.length==0){
+            alert('Plise Enter Ammount')
+            dp.innerText='';
+        }else{
+             balance();
+            }
 });
-
+  const dipositValue=document.getElementById('dipojit-input');
 function getdiposit(){
-    const dipositValue=document.getElementById('dipojit-input');
-    const getvalue=dipositValue.value;
+   const getvalue=dipositValue.value;
 
 return getvalue;
 }
@@ -19,32 +25,39 @@ function totaldiposit(){
 return totalDiposit;
 
 }
-
+const dp=document.getElementById('wrong-data');
 function balance(){
     const balanceTag=document.getElementById('balance');
     const oldBalance=parseFloat(balanceTag.innerText);
     const newBalance=parseFloat(getdiposit());
     const TotalBalance=oldBalance+newBalance;
     const totalDiposit=totaldiposit(); 
-    const p=document.getElementById('wrong-data');
+
    if(newBalance >=0){
     const olddiposit=document.getElementById('dipojit');
           olddiposit.innerText=totalDiposit;
           balanceTag.innerText=TotalBalance;
-          p.innerText='';
+          dp.innerText='';
    }else{
-         p.innerText="incapition balance"
+         dp.innerText="incapition balance"
       }
    const dipositValue=document.getElementById('dipojit-input');
          dipositValue.value='';
 }
 
 document.getElementById('withdrow-btn').addEventListener('click',function(){
-         withdroBalance();
+         
+        const emptyValue=inputTag.value;
+         if(emptyValue.length==0){
+            alert('Plise Enter Ammount')
+            p.innerText=""
+        }else{
+            withdroBalance();
+        }
 })
-
-function getWithdrow(){
     const inputTag=document.getElementById('withdrow-input');
+function getWithdrow(){
+
     const getvalue=inputTag.value;
 
  return getvalue;
@@ -58,7 +71,7 @@ function withdrowAmmount(){
 
 return totalAmmount;
 }
-
+    const p=document.getElementById('withdrow-data');
 function withdroBalance(){
     const balanceTag=document.getElementById('balance');
     const balance=parseFloat(balanceTag.innerText);
@@ -70,10 +83,9 @@ function withdroBalance(){
     const withdrowTag=document.getElementById('withdro');
           withdrowTag.innerText=totalWithdrow; 
           balanceTag.innerText=totalAmmount;
-    const p=document.getElementById('withdrow-data');
           p.innerText=""  
     }else{
-        const p=document.getElementById('withdrow-data');
+  
               p.innerText="Incapition Balance"
     }
     const inputTag=document.getElementById('withdrow-input');
