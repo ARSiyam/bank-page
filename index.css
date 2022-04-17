@@ -164,4 +164,10 @@ button:hover{
         width: 80%;
         margin: 10px;
     }
+    #dipojit-input{
+        width: 70%;
+    }
+    #withdrow-input{
+        width: 70%;
+    }
   }
