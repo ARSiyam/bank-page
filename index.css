@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gainsboro;
+}
+.page-box{
+    display: flex;
+    justify-content:center ;
+    width: 100%;
+   margin-top: 40px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 8, 255);
+   
+    padding: 5px;
+}
+.dipojit{
+    color: white;
+    padding:20px 30px;
+    margin: 10px;
+    width: 300px;
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:rgb(85, 248, 77);
+}
+strong{
+    font-size: 30px;
+    color: white;
+}
+#dipojit{
+    padding:0;
+    margin:0;
+    color:white;
+    font-size:30px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.withdro{
+    color: white;
+    padding:20px 30px;
+    margin: 10px;
+    width: 300px;
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:rgb(252, 37, 4);
+}
+#withdro{
+    padding:0;
+    margin:0;
+    color:white;
+    font-size:30px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.blanch{
+    color: white;
+    padding:20px 30px;
+    margin: 10px;
+    width: 300px;
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(95, 38, 240);
+}
+#balance{
+    padding:0;
+    margin:0;
+    color:white;
+    font-size:30px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+.input-dipo{
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 490px;
+    height: 200px;
+    background-color: rgba(130, 3, 249, 0.996);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input-withdro{
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 490px;
+    height: 200px;
+    background-color: rgb(191, 1, 243);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#dipojit-input{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: large;
+}
+#withdrow-input{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: large;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: gold;
+    width: 100px;
+    font-size: large;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(21, 0, 255);
+}
+#wrong-data{
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+#withdrow-data{
+    margin: 0;
+    padding: 0;
+    color: red;
+  }
+  @media only screen and (max-width: 650px) {
+    .page-box{
+        display: block;
+        margin:10px;
+    }
+    .dipojit{
+        width: 80%;
+        text-align: center;
+    }
+    .withdro{
+        width: 80%;
+        text-align: center;
+    }
+    .blanch{
+        width: 80%;
+        text-align: center;
+    }
+   h1{
+        margin-bottom: 15px;
+    }
+    .input-box {
+        display: block;
+        margin: 10px;
+    }
+    .input-dipo{
+        width: 80%;
+        margin: 10px;
+    }
+   .input-withdro {
+        width: 80%;
+        margin: 10px;
+    }
+  }
